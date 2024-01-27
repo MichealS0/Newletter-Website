@@ -1,5 +1,4 @@
-# Newletter-Website
-# 📰 Newsletter Website Project
+# 📰 Newsletter-Website
 
 ## Overview
 
