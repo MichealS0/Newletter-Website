@@ -14,6 +14,8 @@ module.exports = {
       },
       fontFamily: {
         notica: 'Noticia Text',
+        playfair: 'Playfair Display',
+        poppins: 'Poppins',
       }
     },
   },

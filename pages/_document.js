@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
       <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
-      <body>
+      <body className="bg-gray-300">
         <NavigationBar />
         <Main />
         <NextScript />

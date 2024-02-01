@@ -12,6 +12,8 @@ query MyQuery {
     title
     author
     description
+    tags
+    publishDate
     content {
       markdown
     }
@@ -36,10 +38,11 @@ export default function Home({posts}) {
   return (
     <div>
       <HeroSection posts={posts} />
-      {/* {posts.map((post) => (
-        <NewsCard slug={post.slug} title={post.title} description={post.description} coverImage={post.coverImage}/>
-      ))} */}
-      
+      <div className="flex flex-wrap gap-2 justify-between p-1 w-screen md:w-[900px] mx-auto">
+        {posts.map((post) => (
+          <NewsCard description={post.description} author={post.author} title={post.title} coverImage={post.coverImage.url} tags={post.tags} date={post.publishDate}/>
+      ))}
+      </div>
     </div>
   );
 }
